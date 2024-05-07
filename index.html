@@ -1,9 +1,123 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tea Shop</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="grid">
+    <header class="griditem1">
+        <div id="logobar">
+            <div id="space"></div>
+            <div id="branding">
+                <img id="tealogo" src="media/tealogo.png" alt="Tea Shop Logo"/>
+                <h1>Tea Shop</h1>
+            </div>
+            <div id="logos">
+                <a href="https://example.com/link1" class="icon1">
+                    <button class="icons">
+                        &#x2764;
+                    </button>
+                </a>
+                <a href="https://example.com/link2">
+                    <button class="icons">
+                        &#x1F464;
+                    </button>
+                </a>
+                <a href="https://example.com/link3">
+                    <button class="icons">
+                        &#x1F6D2;
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="griditem2">
+        <div class="navlinks">
+            <div class="dropdownbox">
+                <a href="#teavarieties">Tea Varieties&#x25BE;</a>
+                <div class="dropdown">
+                    <a href="https://example.com/link1" target="_self">Black Tea</a>
+                    <a href="https://example.com/link3" target="_self">Green Tea</a>
+                    <a href="https://example.com/link4" target="_self">White Tea</a>
+                    <a href="https://example.com/link2" target="_self">Fruit Tea</a>
+                    <a href="https://example.com/link5" target="_self">Herbal Tea</a>
+                </div>
+            </div>
+            <div class="dropdownbox">
+                <a href="#accessories">Accessories&#x25BE;</a>
+                <div class="dropdown">
+                    <a href="https://example.com/link6" target="_self">Teapots</a>
+                    <a href="https://example.com/link1" target="_self">Teacups</a>
+                    <a href="https://example.com/link2" target="_self">Tea Strainers</a>
+                    <a href="https://example.com/link3" target="_self">Other Accessories</a>
+                </div>
+            </div>
+            <a href="https://example.com/link4" class="dropdownbox">Brewing Tips</a>
+            <a href="https://example.com/link5" class="dropdownbox">Gift Ideas</a>
+            <a href="https://example.com/link6" class="dropdownbox">All Products</a>
+        </div>
+    </nav>
+
+    <main class="griditem3">
+        <div class="media-container">
+            <a href="https://example.com/link1" target="_self">
+                <img src="media/Blacktea.png" alt="Black Tea" class="teaimage">
+            </a>
+            <video controls autoplay>
+                <source src="media/teavideo.mp4" type="video/mp4" class="teavideo">
+                Your browser does not support the video tag.
+            </video>
+            <a href="https://example.com/link2" target="_self">
+                <img src="media/Fruittea.png" alt="Fruit Tea" class="teaimage">
+            </a>
+        </div>
+
+        <div class="text-container">
+            <h1 class="texth">All of our Tea is sustainably sourced!</h1>
+            <p class="text">We are dedicated to providing our customers with the highest quality tea, sourced responsibly to support both the environment and the communities we work with.
+                From cultivation to shipping, we optimize every step of our supply chain to minimize carbon emissions. This includes choosing sea freight over air and using eco-friendly packaging materials.
+                We believe that sustainability extends to the people who grow and pick our tea. We ensure that all workers receive fair wages that exceed local minimum standards. This commitment helps improve the quality of life for our workers and their families.
+                We also maintain stringent health and safety standards on all partnering farms. Regular training and updated equipment are standard practice, ensuring that working environments are safe and dignified.
+                We source our tea from farms that adhere strictly to organic farming methods. This means our tea is grown without synthetic pesticides or fertilizers, reducing pollution and ensuring soil health. By embracing organic farming, we significantly reduce the chemical load released into the environment. This protects not only the local land and water but also the health of workers and wildlife in the area.
+                We source our tea sustainably because we recognize that the future of the tea industry depends on healthy environments and thriving communities. Our practices reflect a deep respect for the planet and its people. We believe that this approach not only results in a superior product but also aligns with our customers' values of responsibility and mindfulness.
+                We are dedicated to providing our customers with the highest quality tea, sourced responsibly to support both the environment and the communities we work with.
+                From cultivation to shipping, we optimize every step of our supply chain to minimize carbon emissions. This includes choosing sea freight over air and using eco-friendly packaging materials.
+                We believe that sustainability extends to the people who grow and pick our tea. We ensure that all workers receive fair wages that exceed local minimum standards. This commitment helps improve the quality of life for our workers and their families.
+                We also maintain stringent health and safety standards on all partnering farms. Regular training and updated equipment are standard practice, ensuring that working environments are safe and dignified.
+                We source our tea from farms that adhere strictly to organic farming methods. This means our tea is grown without synthetic pesticides or fertilizers, reducing pollution and ensuring soil health. By embracing organic farming, we significantly reduce the chemical load released into the environment. This protects not only the local land and water but also the health of workers and wildlife in the area.
+                We source our tea sustainably because we recognize that the future of the tea industry depends on healthy environments and thriving communities. Our practices reflect a deep respect for the planet and its people. We believe that this approach not only results in a superior product but also aligns with our customers' values of responsibility and mindfulness.
+            </p>
+            <a href="http://example.org">
+                <button class="textbutton">Read more</button>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="https://example.com/link3" target="_self">
+                <img src="media/Greentea.png" alt="Green Tea" class="teaimage">
+            </a>
+            <a href="https://example.com/link4" target="_self">
+                <img src="media/Whitetea.png" alt="White Tea" class="teaimage">
+            </a>
+            <a href="https://example.com/link5" target="_self">
+                <img src="media/Herbaltea.png" alt="Herbal Tea" class="teaimage">
+            </a>
+        </div>
+    </main>
+
+    <footer class="griditem4">
+        <p class="copyright">&copy; Tea Shop Inc, 2024</p>
+        <div class="footerlinks">
+            <a href="https://example.com/link6">Newsletter</a>
+            <a href="https://example.com/link1">Shipping & Payment Terms</a>
+            <a href="https://example.com/link2">FAQ</a>
+            <a href="https://example.com/link3">About Us</a>
+            <a href="https://example.com/link4">Contact</a>
+        </div>
+    </footer>
+
+</body>
 </html>
