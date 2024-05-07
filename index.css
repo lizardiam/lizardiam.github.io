@@ -1,0 +1,277 @@
+body {
+    font-family: "Roboto Light", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    color: black;
+    background-color: #fedfc3;
+}
+
+header h1 {
+    display: inline;
+    font-weight: lighter;
+}
+
+#tealogo {
+    height: 30pt;
+    width: auto;
+}
+
+.icons {
+    border: none;
+    background-color: transparent;
+}
+
+#logobar {
+    width: 71.5%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#space {
+    flex: 1;
+}
+
+#branding {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logos {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.griditem2 {
+    background-color: oldlace;
+    position: relative;
+    align-content: center;
+}
+
+.dropdownbox {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+
+.dropdown {
+    display: none;
+    z-index: 1;
+    background-color: #fedfc3;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.dropdownbox:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown a:hover {
+    background-color: oldlace;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: darkseagreen;
+}
+
+.media-container {
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.text-container {
+    text-align: center;
+    display: block;
+    background-color: #fedfc3;
+    padding-bottom: 1.5%;
+}
+
+.text {
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.textbutton {
+    background-color: antiquewhite;
+    border-color: rosybrown;
+    border-radius: 10px;
+    padding: 0.75%;
+}
+
+footer {
+    background-color: #fedfc3;
+}
+
+@media (min-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto 1fr 1fr 1fr auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+    }
+
+    .griditem1 {
+        grid-area: 1 / 1 / 2 / 8;
+        align-content: center;
+        height: 5vh;
+    }
+    .griditem2 {
+        grid-area: 2 / 1 / 3 / 8;
+        height: 6.7vh;
+    }
+    .griditem3 {
+        grid-area: 3 / 2 / 6 / 7;
+        /*Flexbox in griditem*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .griditem4 {
+        grid-area: 6 / 1 / 7 / 8;
+    }
+    .navlinks {
+        margin: auto;
+        width: 71.5%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .media-container, .image-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .text-container {
+        grid-column: 1 / 4;
+    }
+    .media-container img, .image-container img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .media-container video {
+        width: 33.3%;
+        height: 100%;
+        display: block;
+    }
+    .footerlinks {
+        width: 71.5%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer a {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .copyright {
+        float: left;
+        margin-right: -200px;
+        margin-left: 5px;
+        color: gray;
+    }
+}
+
+@media (max-width: 992px) {
+    .griditem1 {
+        height: auto;
+        font-size: 3rem;
+    }
+    .griditem2 {
+        font-size: 3rem;
+        height: auto;
+    }
+    .griditem4 {
+        text-align: center;
+        display: block;
+        padding-top: 1px;
+    }
+    .navlinks {
+        margin: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dropdownbox {
+        margin-bottom: 1%;
+    }
+    .media-container img, .media-container video, .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .text-container {
+        padding-top: 1px;
+    }
+    .footerlinks {
+        height: auto;
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .griditem4 a {
+        padding-bottom: 2%;
+    }
+    a:active a:focus {
+        color: darkseagreen;
+    }
+    .text {
+        font-size: 2rem;
+    }
+    .textbutton {
+        transform: scale(2.5);
+        margin: 3%;
+    }
+    .dropdown {
+        width: 100vw;
+    }
+}
