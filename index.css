@@ -14,29 +14,25 @@ header {
 header h1 {
     display: inline;
     font-weight: lighter;
+    margin-left: 10px;
 }
 
 #tealogo {
-    height: 30pt;
+    min-height: 30pt;
     width: auto;
 }
 
 .icons {
     border: none;
     background-color: transparent;
+    min-height: 25px;
+    width: auto;
 }
 
 #logobar {
-    width: 71.5%;
     height: 100%;
     display: flex;
-    margin: auto;
-    justify-content: space-between;
     align-items: center;
-}
-
-#space {
-    flex: 1;
 }
 
 #branding {
@@ -51,7 +47,6 @@ header h1 {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
-
 }
 
 button {
@@ -166,6 +161,17 @@ footer {
     .griditem4 {
         grid-area: 6 / 1 / 7 / 8;
     }
+
+    #logobar {
+        width: 71.5%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    #space {
+        flex: 1;
+    }
+
     .navlinks {
         margin: auto;
         width: 71.5%;
@@ -223,10 +229,8 @@ footer {
 @media (max-width: 992px) {
     .griditem1 {
         height: auto;
-        font-size: 3rem;
     }
     .griditem2 {
-        font-size: 3rem;
         height: auto;
     }
     .griditem4 {
@@ -234,15 +238,31 @@ footer {
         display: block;
         padding-top: 1px;
     }
+    #logobar {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #branding {
+        min-width: 70%;
+    }
+
     .navlinks {
         margin: auto;
         height: 100%;
-        display: flex;
-        flex-direction: column;
+        display: inline-flex;
+        text-align: center;
+        font-size: 9.5pt;
         align-items: center;
+        justify-content: space-between;
     }
     .dropdownbox {
         margin-bottom: 1%;
+        border-right: 0.5px solid #ccc;
+        padding: 3px;
+        min-height: 29px;
+    }
+    .dropdownbox:last-child {
+        border-right: none;
     }
     .media-container img, .media-container video, .image-container img {
         width: 100%;
@@ -254,7 +274,6 @@ footer {
     }
     .footerlinks {
         height: auto;
-        font-size: 2.5rem;
         display: flex;
         flex-direction: column;
     }
@@ -264,14 +283,12 @@ footer {
     a:active a:focus {
         color: darkseagreen;
     }
-    .text {
-        font-size: 2rem;
-    }
     .textbutton {
-        transform: scale(2.5);
         margin: 3%;
     }
     .dropdown {
         width: 100vw;
     }
+
 }
+
