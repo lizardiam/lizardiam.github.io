@@ -155,25 +155,14 @@ a:hover {
 
 footer {
     background-color: #fedfc3;
-    height: 50px;
-    margin-top: -4px;
 }
 
-footer a {
-    padding-right: 90px;
-    padding-left: 90px;
-}
 
 .copyright {
     float: left;
-    padding-left: 5px;
-}
-
-.footerlinks {
-    width: 1500px;
-    text-align: center;
-    padding-left: 250px;
-    padding-top: 15px;
+    margin-right: -200px;
+    margin-left: 5px;
+    color: gray;
 }
 
 @media (min-width: 992px) {
@@ -201,6 +190,32 @@ footer a {
         margin: auto;
         width: 71.5%;
         height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    footer {
+        text-align: center;
+        display: block;
+        padding-top: 1px;
+        height: 5vh;
+    }
+
+    footer a {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .footerlinks {
+        width: 71.5%;
+        height: 100%;
+        margin: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -246,5 +261,21 @@ footer a {
     }
     .dropdown {
         width: 100vw;
+    }
+
+    footer {
+        text-align: center;
+        display: block;
+        padding-top: 1px;
+    }
+
+    footer a {
+        padding-bottom: 2%;
+    }
+
+    .footerlinks {
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
 }
