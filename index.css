@@ -8,7 +8,7 @@ header {
     text-align: center;
     color: black;
     background-color: #fedfc3;
-    align-content: center;
+    height: 50px;
 }
 
 header h1 {
@@ -17,64 +17,56 @@ header h1 {
 }
 
 #tealogo {
-    min-height: 30pt;
-    width: auto;
+    margin-left: 550px;
+    margin-top: 8px;
+    margin-right: 15px;
 }
 
-.icons {
+#icon1, #icon2, #icon3 {
     border: none;
     background-color: transparent;
-    min-height: 25px;
-    width: auto;
+    vertical-align: 63%;
 }
-
-#logobar {
-    height: 100%;
-    display: flex;
-    align-items: center;
+#icon1 {
+    margin-left: 660px;
 }
-
-#branding {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#logos {
-    flex: 1;
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
-
 
 button {
     cursor: pointer;
 }
 
-.navbar {
+.griditem2 {
     background-color: oldlace;
+    height: 67px;
     position: relative;
-    align-content: center;
+}
+
+.navlinks {
+    padding-left: 320px;
+    padding-left: 320px;
+    padding-top: 25px;
 }
 
 .dropdownbox {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
+    padding-right: 90px;
+    padding-left: 90px;
+    width: 1500px;
+    text-align: center;
     position: relative;
-    flex: 1;
+    padding-bottom: 22.5px;
 }
 
 .dropdown {
     display: none;
     z-index: 1;
     background-color: #fedfc3;
+    width: 350px;
+    overflow: auto;
     position: absolute;
-    top: 100%;
-    width: 100%;
+    left: 0;
+    margin-left: -30px;
+    margin-top: 22.5px;
 }
 
 .dropdownbox:hover .dropdown {
@@ -83,7 +75,7 @@ button {
 
 .dropdown a {
     display: block;
-    padding: 10px;
+    padding: 15px 15px 5px;
 }
 
 .dropdown a:hover {
@@ -109,13 +101,10 @@ a:hover {
 
 .text-container {
     text-align: center;
+    position: relative;
     left: auto;
     display: block;
     background-color: #fedfc3;
-    width: 1500px;
-    margin-left: 265.5px;
-    margin-top: -25px;
-    height: 450px
 }
 
 .texth {
@@ -123,9 +112,8 @@ a:hover {
 }
 
 .text {
-    width: 1400px;
-    margin-left: 50px;
     display: block;
+    padding: 15px;
 }
 
 .teaimage, .mediaimage {
@@ -155,127 +143,69 @@ a:hover {
 
 footer {
     background-color: #fedfc3;
+    height: 50px;
+    margin-top: -4px;
 }
 
+footer a {
+    padding-right: 90px;
+    padding-left: 90px;
+}
 
 .copyright {
     float: left;
-    margin-right: -200px;
-    margin-left: 5px;
-    color: gray;
+    padding-left: 5px;
+}
+
+.footerlinks {
+    width: 1500px;
+    text-align: center;
+    padding-left: 250px;
+    padding-top: 15px;
 }
 
 @media (min-width: 992px) {
-
-    header {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto 1fr 1fr 1fr auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+    }
+    .griditem1 {
+        grid-area: 1 / 1 / 2 / 8;
         align-content: center;
         height: 5vh;
     }
-
-    #logobar {
-        width: 71.5%;
-        margin: auto;
-        justify-content: space-between;
-    }
-
-    #space {
-        flex: 1;
-    }
-
-    .navbar {
+    .griditem2 {
+        grid-area: 2 / 1 / 3 / 8;
         height: 6.7vh;
     }
-
-    .navlinks {
-        margin: auto;
-        width: 71.5%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+    .griditem3 {
+        grid-area: 3 / 2 / 6 / 7;
     }
-
-    footer {
-        text-align: center;
-        display: block;
-        padding-top: 1px;
-        height: 5vh;
+    .griditem4 {
+        grid-area: 6 / 1 / 7 / 8;
     }
-
-    footer a {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .footerlinks {
-        width: 71.5%;
-        height: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+    .text-container {
+        grid-column: 1 / 4;
     }
 }
 
 @media (max-width: 992px) {
-    header {
+    .griditem1 {
         height: auto;
     }
-    #logobar {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #branding {
-        min-width: 70%;
-    }
-
-    navbar {
+    .griditem2 {
         height: auto;
     }
-
-    .navlinks {
-        margin: auto;
-        height: 100%;
-        display: inline-flex;
-        text-align: center;
-        font-size: 9.5pt;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .dropdownbox {
-        margin-bottom: 1%;
-        border-right: 0.5px solid #ccc;
-        padding: 3px;
-        min-height: 29px;
-    }
-    .dropdownbox:last-child {
-        border-right: none;
-    }
-    .dropdown {
-        width: 100vw;
-    }
-
-    footer {
+    .griditem4 {
         text-align: center;
         display: block;
         padding-top: 1px;
     }
-
-    footer a {
+    .griditem4 a {
         padding-bottom: 2%;
-    }
-
-    .footerlinks {
-        height: auto;
-        display: flex;
-        flex-direction: column;
     }
 }
