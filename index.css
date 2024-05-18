@@ -104,7 +104,6 @@ a:hover {
     left: auto;
     display: block;
     background-color: #fedfc3;
-    width: 1500px;
     margin-left: 265.5px;
     margin-top: -25px;
     height: 450px
@@ -115,8 +114,6 @@ a:hover {
 }
 
 .text {
-    width: 1400px;
-    margin-left: 50px;
     display: block;
 }
 
