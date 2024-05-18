@@ -55,36 +55,26 @@ button {
 
 .navbar {
     background-color: oldlace;
-    height: 67px;
     position: relative;
-}
-
-.navlinks {
-    padding-left: 320px;
-    padding-left: 320px;
-    padding-top: 25px;
+    align-content: center;
 }
 
 .dropdownbox {
-    display: inline;
-    padding-right: 90px;
-    padding-left: 90px;
-    width: 1500px;
-    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding-bottom: 22.5px;
+    flex: 1;
 }
 
 .dropdown {
     display: none;
     z-index: 1;
     background-color: #fedfc3;
-    width: 350px;
-    overflow: auto;
     position: absolute;
-    left: 0;
-    margin-left: -30px;
-    margin-top: 22.5px;
+    top: 100%;
+    width: 100%;
 }
 
 .dropdownbox:hover .dropdown {
@@ -93,7 +83,7 @@ button {
 
 .dropdown a {
     display: block;
-    padding: 15px 15px 5px;
+    padding: 10px;
 }
 
 .dropdown a:hover {
@@ -202,6 +192,21 @@ footer a {
     #space {
         flex: 1;
     }
+
+    .navbar {
+        height: 6.7vh;
+    }
+
+    .navlinks {
+        margin: auto;
+        width: 71.5%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
 @media (max-width: 992px) {
@@ -214,5 +219,32 @@ footer a {
     }
     #branding {
         min-width: 70%;
+    }
+
+    navbar {
+        height: auto;
+    }
+
+    .navlinks {
+        margin: auto;
+        height: 100%;
+        display: inline-flex;
+        text-align: center;
+        font-size: 9.5pt;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dropdownbox {
+        margin-bottom: 1%;
+        border-right: 0.5px solid #ccc;
+        padding: 3px;
+        min-height: 29px;
+    }
+    .dropdownbox:last-child {
+        border-right: none;
+    }
+    .dropdown {
+        width: 100vw;
     }
 }
