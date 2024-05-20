@@ -1,80 +1,72 @@
 body {
     font-family: "Roboto Light", sans-serif;
     font-weight: normal;
-    margin: 0;
-    padding: 0;
+    overflow: scroll;
 }
 
 header {
     text-align: center;
     color: black;
     background-color: #fedfc3;
+    height: 50px;
 }
 
 header h1 {
     display: inline;
     font-weight: lighter;
-    margin-left: 10px;
 }
 
 #tealogo {
-    min-height: 30pt;
-    width: auto;
+    margin-left: 550px;
+    margin-top: 8px;
+    margin-right: 15px;
 }
 
-.icons {
+#icon1, #icon2, #icon3 {
     border: none;
     background-color: transparent;
-    min-height: 25px;
-    width: auto;
+    vertical-align: 63%;
 }
-
-#logobar {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#branding {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#logos {
-    flex: 1;
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
+#icon1 {
+    margin-left: 660px;
 }
 
 button {
     cursor: pointer;
 }
 
-.griditem2 {
+.navbar {
     background-color: oldlace;
+    height: 67px;
     position: relative;
-    align-content: center;
+}
+
+.navlinks {
+    padding-left: 320px;
+    padding-left: 320px;
+    padding-top: 25px;
 }
 
 .dropdownbox {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
+    padding-right: 90px;
+    padding-left: 90px;
+    width: 1500px;
+    text-align: center;
     position: relative;
-    flex: 1;
+    padding-bottom: 22.5px;
 }
 
 .dropdown {
     display: none;
     z-index: 1;
     background-color: #fedfc3;
+    width: 350px;
+    overflow: auto;
     position: absolute;
-    top: 100%;
-    width: 100%;
+    left: 0;
+    margin-left: -30px;
+    margin-top: 22.5px;
 }
 
 .dropdownbox:hover .dropdown {
@@ -83,7 +75,7 @@ button {
 
 .dropdown a {
     display: block;
-    padding: 10px;
+    padding: 15px 15px 5px;
 }
 
 .dropdown a:hover {
@@ -109,88 +101,57 @@ a:hover {
 
 .text-container {
     text-align: center;
+    left: auto;
     display: block;
     background-color: #fedfc3;
-    padding-bottom: 1.5%;
+    width: 1500px;
+    margin-left: 265.5px;
+    margin-top: -25px;
+    height: 450px
+}
+
+.texth {
+    padding-top: 15px;
 }
 
 .text {
+    width: 1400px;
+    margin-left: 50px;
     display: block;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 .textbutton {
+    padding: 10px;
+    margin-bottom: 20px;
     background-color: antiquewhite;
     border-color: rosybrown;
     border-radius: 10px;
-    padding: 0.75%;
 }
 
 footer {
     background-color: #fedfc3;
+    height: 50px;
+    margin-top: -4px;
 }
 
+footer a {
+    padding-right: 90px;
+    padding-left: 90px;
+}
+
+.copyright {
+    float: left;
+    padding-left: 5px;
+}
+
+.footerlinks {
+    width: 1500px;
+    text-align: center;
+    padding-left: 250px;
+    padding-top: 15px;
+}
 @media (min-width: 992px) {
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto auto 1fr 1fr 1fr auto;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        width: 100%;
-    }
 
-    .griditem1 {
-        grid-area: 1 / 1 / 2 / 8;
-        align-content: center;
-        height: 5vh;
-    }
-    .griditem2 {
-        grid-area: 2 / 1 / 3 / 8;
-        height: 6.7vh;
-    }
-    .griditem3 {
-        grid-area: 3 / 2 / 6 / 7;
-        /*Flexbox in griditem*/
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .griditem4 {
-        grid-area: 6 / 1 / 7 / 8;
-    }
-
-    #logobar {
-        width: 71.5%;
-        margin: auto;
-        justify-content: space-between;
-    }
-
-    #space {
-        flex: 1;
-    }
-
-    .navlinks {
-        margin: auto;
-        width: 71.5%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .media-container, .image-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    .text-container {
-        grid-column: 1 / 4;
-    }
     .media-container img, .image-container img {
         width: 100%;
         height: 100%;
@@ -201,94 +162,24 @@ footer {
         height: 100%;
         display: block;
     }
-    .footerlinks {
-        width: 71.5%;
-        height: 100%;
-        margin: auto;
+    .media-container, .image-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: space-evenly;
-        align-items: center;
-    }
-    footer a {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    .copyright {
-        float: left;
-        margin-right: -200px;
-        margin-left: 5px;
-        color: gray;
+        width: 100%;
     }
 }
 
 @media (max-width: 992px) {
-    .griditem1 {
-        height: auto;
-    }
-    .griditem2 {
-        height: auto;
-    }
-    .griditem4 {
-        text-align: center;
-        display: block;
-        padding-top: 1px;
-    }
-    #logobar {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #branding {
-        min-width: 70%;
-    }
-
-    .navlinks {
-        margin: auto;
-        height: 100%;
-        display: inline-flex;
-        text-align: center;
-        font-size: 9.5pt;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .dropdownbox {
-        margin-bottom: 1%;
-        border-right: 0.5px solid #ccc;
-        padding: 3px;
-        min-height: 29px;
-    }
-    .dropdownbox:last-child {
-        border-right: none;
-    }
     .media-container img, .media-container video, .image-container img {
         width: 100%;
         height: auto;
         display: block;
     }
-    .text-container {
-        padding-top: 1px;
-    }
-    .footerlinks {
-        height: auto;
+    .media-container, .image-container {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
     }
-    .griditem4 a {
-        padding-bottom: 2%;
-    }
-    a:active a:focus {
-        color: darkseagreen;
-    }
-    .textbutton {
-        margin: 3%;
-    }
-    .dropdown {
-        width: 100vw;
-    }
-
 }
-
